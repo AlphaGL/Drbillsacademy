@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.highlight {
+    color: red;
+}
+
+.testimoniesbg {
+    background-color: #000000;
+}
+
+.collapse {
+    margin-left: 150px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-contact:hover {
+    margin-bottom: 5px;
+    box-shadow: 2px 2px solid #2d2324;
+}
+
+.navbar-contact {
+    display: flex;
+    align-items: center;
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.navbar-contact i {
+    margin-right: 5px;
+}
+
+.navbar-search {
+    margin-left: 15px;
+}
+
+.navbar-search i {
+    color: black;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+    width: 96%;
+    height: 95%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 96%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.warning-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.warning-icon img {
+    width: 50px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+@media (max-width: 1029.33px) {
+    .collapse {
+        margin-left: 0;
+    }
+
+    .navbar-contact {
+        margin-top: 10px;
+    }
+
+    .modal {
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90%;
+        height: 550px;
+        margin: 3%;
+    }
+
+    .modal-content {
+        width: 90%;
+        height: auto;
+        margin: 50% auto;
+        padding: 10px;
+    }
+
+    .warning-icon img {
+        width: 100px;
+    }
+
+    .close {
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #e2e6ea;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Additional styles for hidden content */
+#hiddenContent {
+    display: none;
+    margin-top: 20px;
+}
